@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header clearfix">
+        <button class="btn-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="container">
+            <nav class="nav">
+                <ul>
+                    <li class="count-active">
+                        <a href="#">
+                            Бронирование (<span class="count">2</span>)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Рейсы
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Клиенты
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="account">
+            <a href="#">
+                <img src="img/account__icon.png" alt="">
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="request">
+            <div class="container">
+                <div class="row">
+                    <div class="input-group date-picker">
+                        <label class="form-label" for="daterange">Выбрать период</label>
+                        <input type="text" id="daterange" name="daterange" value="16:06:2020 - 16:01:2020" class="form-control"> 
+                    </div>
+                    <div class="input-group sort">
+                        <label class="form-label">Сортировать заявки</label>
+                        <select class="form-control">
+                            <option>Новые</option>
+                            <option>Новые</option>
+                            <option>Новые</option>
+                        </select> 
+                    </div>
+                    <button class="btn-create-request">
+                        <img src="img/plus__icon.png" alt="">
+                        <span>Создать заявку</span>
+                    </button>
+                </div> 
+            </div>
+        </div>
+        <div class="table-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="date-block">
+                        <strong>16.06.2020</strong>
+                        <button class="btn-create-request">
+                            <img src="img/plus__icon.png" alt="">
+                            <span>Создать заявку</span>
+                        </button>
+                    </div>
+                    <div class="top-bar-flight">
+                        <div class="input-group">
+                            <input type="checkbox" id="checkboxClear" class="checkbox-clear" checked>
+                            <label for="checkboxClear"><span></span></label>
+                        </div>
+                        <div class="btn-group">
+                            <button><strong>Назначить на рейс</strong></button>
+                            <button>Перенести на дату</button>
+                            <button>Отменить бронь</button>
+                        </div>
+                    </div>
+                    <div class="table__row">
+                        <div class="input-group column">
+                            <input type="checkbox" id="checkboxOn1" class="checkbox-on" name="checkboxOn1">
+                            <label for="checkboxOn1"><span></span></label>
+                        </div>
+                        <div class="column number-flight">
+                            <a href="#">1234567</a>
+                            <div class="label new">Новая</div>
+                        </div>
+                        <div class="column name">
+                            <a href="#">Решетняк Владислав</a>
+                        </div>
+                        <div class="column from-to">
+                            <div class="from">
+                                <span class="time">11.00</span>
+                                <a href="#" class="city">Харьков</a>
+                            </div>
+                            <img class="arrow" src="img/arrow-from-to.png" alt="">
+                            <div class="to">
+                                <span class="time">23.00</span>
+                                <a href="#" class="city">Севастополь</a>
+                            </div>
+                        </div>
+                        <div class="column people">
+                            <span>Взрослый: 1</span>
+                        </div>
+                        <div class="column price">
+                            900 грн
+                        </div>
+                        <div class="column chat">
+
+                        </div>
+                    </div>
+                    <div class="table__row">
+                        <div class="input-group column">
+                            <input type="checkbox" id="checkboxOn2" class="checkbox-on" name="checkboxOn2" checked>
+                            <label for="checkboxOn2"><span></span></label>
+                        </div>
+                        <div class="column number-flight">
+                            <a href="#">1234567</a>
+                            <div class="label cancel">Отменена</div>
+                        </div>
+                        <div class="column name">
+                            <a href="#">Константинопольский Иван</a>
+                        </div>
+                        <div class="column from-to">
+                            <div class="from">
+                                <span class="time">11.00</span>
+                                <a href="#" class="city">Киев</a>
+                            </div>
+                            <img class="arrow" src="img/arrow-from-to.png" alt="">
+                            <div class="to">
+                                <span class="time">23.00</span>
+                                <a href="#" class="city">Севастополь</a>
+                            </div>
+                        </div>
+                        <div class="column people">
+                            <span>Взрослый: 2</span>
+                            <span>Детский: 2</span>
+                        </div>
+                        <div class="column price">
+                            3400 грн
+                        </div>
+                        <div class="column chat">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="date-block">
+                        <strong>16.01.2020</strong>
+                        <button class="btn-create-request">
+                            <img src="img/plus__icon.png" alt="">
+                            <span>Создать заявку</span>
+                        </button>
+                    </div>
+                    <div class="table__row">
+                        <div class="input-group column">
+                            <input type="checkbox" id="checkboxOn3" class="checkbox-on" name="checkboxOn3">
+                            <label for="checkboxOn3"><span></span></label>
+                        </div>
+                        <div class="column number-flight">
+                            <a href="#">333221</a>
+                        </div>
+                        <div class="column name">
+                            <a href="#">Решетняк Владислав</a>
+                        </div>
+                        <div class="column from-to">
+                            <div class="from">
+                                <span class="time">11.00</span>
+                                <a href="#" class="city">Харьков</a>
+                            </div>
+                            <img class="arrow" src="img/arrow-from-to.png" alt="">
+                            <div class="to">
+                                <span class="time">23.00</span>
+                                <a href="#" class="city">Севастополь</a>
+                            </div>
+                        </div>
+                        <div class="column people">
+                            <span>Взрослый: 1</span>
+                        </div>
+                        <div class="column price">
+                            900 грн
+                        </div>
+                        <div class="column comment">
+                            <a href="#">
+                                <img src="img/comment__icon.png" alt="">
+                            </a>
+                            <a href="" class="more">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script>
+        $(function() {
+            $('input[name="daterange"]').daterangepicker({
+                opens: 'left',
+                locale: {
+                    format: 'YYYY:MM:DD',
+                    applyLabel: 'Принять',
+                    cancelLabel: 'Отмена',
+                    invalidDateLabel: 'Выберите дату',
+                    daysOfWeek: ['Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс', 'Пн'],
+                    monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+                    firstDay: 1
+                },
+            }, function(start, end, label) {
+                console.log("A new date selection was made: " + start.format('YYYY:MM:DD') + ' to ' + end.format('YYYY:MM:DD'));
+            });
+        });
+    </script>
+</body>
+</html>
